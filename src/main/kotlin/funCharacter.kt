@@ -24,7 +24,6 @@ fun makeNewCharacter(): Character {
         availableMoney = newCharacterMoney
     )
 
-
 }
 
 fun chooseCharacter(availableCharacter: List<Character>):Character {

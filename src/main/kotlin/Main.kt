@@ -49,6 +49,15 @@ fun main() {
 
     printPlayer(player)
 
+    // Story starts
+    opening(player)
+    quitOrNext()
+
+    phaseOne(player)
+    quitOrNext()
+
+
+
 }
 
 
