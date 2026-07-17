@@ -46,19 +46,37 @@ fun main() {
     } else {
         makeNewCharacter()
     }
-    quitOrNext()
+
+    if (quitOrNext()){
+        return
+    }
 
     // Story
     opening(player)
 
     phaseOne(player)
-    quitOrNext()
+    if (loosingCondition(player)){
+        return
+    }
+    if (quitOrNext()){
+        return
+    }
 
     phaseTwo(player)
-    quitOrNext()
+    if (loosingCondition(player)){
+        return
+    }
+    if (quitOrNext()){
+        return
+    }
 
     phaseThree(player)
-    quitOrNext()
+    if (loosingCondition(player)){
+        return
+    }
+    if (quitOrNext()){
+        return
+    }
 
     ending(player)
 

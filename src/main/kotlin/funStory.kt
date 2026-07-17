@@ -11,7 +11,7 @@ fun ending(player: Character) {
         "You made it with ${player.availableTime} minutes to spare!",
         "You hurriedly went to class and see your friends chatting.",
         "You find your seat, catch your breath, and feel a sense of accomplishment.",
-        "\n\n[THE END]"
+        "\n[THE END]"
     )
 
     for (sentence in ending) {
@@ -37,7 +37,7 @@ fun opening(player: Character){
     """.trimIndent(),
         "${player.name}: I'm late to my first day of uni??? ",
         "${player.name}: Better hurry up!",
-        "You quickly got yourself ready and realize...",
+        "\nYou quickly got yourself ready and realize...",
         "You need to take multiple transportation to get to your beloved uni",
         "In the midst of panicking, you took a peek inside your wallet...",
         "You noticed that there is only Rp${player.availableMoney}!",
