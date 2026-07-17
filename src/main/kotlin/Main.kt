@@ -46,17 +46,21 @@ fun main() {
     } else {
         makeNewCharacter()
     }
-
-    printPlayer(player)
-
-    // Story starts
-    opening(player)
     quitOrNext()
+
+    // Story
+    opening(player)
 
     phaseOne(player)
     quitOrNext()
 
+    phaseTwo(player)
+    quitOrNext()
 
+    phaseThree(player)
+    quitOrNext()
+
+    ending(player)
 
 }
 

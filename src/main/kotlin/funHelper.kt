@@ -9,7 +9,3 @@ fun quitOrNext(){
     }
 }
 
-fun chooseVehicle(player: Character): Character{
-
-    return player
-}

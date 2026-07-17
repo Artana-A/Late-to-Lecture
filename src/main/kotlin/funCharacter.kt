@@ -23,19 +23,20 @@ fun makeNewCharacter(): Character {
         availableTime = newCharacterTime,
         availableMoney = newCharacterMoney
     )
-
 }
 
 fun chooseCharacter(availableCharacter: List<Character>):Character {
     var choice = 0
     while (choice !in 1..listCharacter.size) {
-        println("\nChoose your character!\n")
+        println("\nChoose your character!")
         for (i in availableCharacter.indices){
             println("""
-                Character #${i+1} 
-                Name    : ${availableCharacter[i].name} 
-                Time    : ${availableCharacter[i].availableTime}
-                Money   : Rp${availableCharacter[i].availableMoney}
+                _____________________________________________________
+                 Character #${i+1} 
+                 Name    : ${availableCharacter[i].name} 
+                 Time    : ${availableCharacter[i].availableTime}
+                 Money   : Rp${availableCharacter[i].availableMoney}
+                _____________________________________________________
                 """.trimIndent())
             print("\n")
         }
@@ -47,16 +48,4 @@ fun chooseCharacter(availableCharacter: List<Character>):Character {
     var player = availableCharacter[choice-1]
 
     return player
-}
-
-fun printPlayer(chosenPlayer: Character){
-    print("\n")
-    println("""
-                Chosen Character 
-                Name    : ${chosenPlayer.name} 
-                Time    : ${chosenPlayer.availableTime}
-                Money   : Rp${chosenPlayer.availableMoney}
-                """.trimIndent()
-    )
-
 }

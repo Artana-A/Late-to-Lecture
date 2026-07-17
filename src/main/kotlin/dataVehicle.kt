@@ -1,18 +1,16 @@
 package org.example
 
-//Phase 1 data
 
-//Phase 2 data
-
-//Phase 3 data
 
 // Interface & Class
 interface Vehicle {
+    val name: String
     val price: Float
     val time: Int
 }
 
 data class TwoWheel (
+    override var name: String,
     override var price: Float,
     override var time: Int
 ): Vehicle{
@@ -23,6 +21,7 @@ data class TwoWheel (
 }
 
 data class FourWheel (
+    override var name: String,
     override var price: Float,
     override var time: Int
 ): Vehicle{
@@ -33,6 +32,7 @@ data class FourWheel (
 }
 
 data class Freedom (
+    override var name: String,
     override var price: Float,
     override var time: Int
 ): Vehicle{
@@ -45,16 +45,19 @@ data class Freedom (
 // The data (Two Wheel)
 
 var onlineTaxibike = TwoWheel(
+    "Online Taxi Bike",
     9000f,
     10
 )
 
 var regularTaxibike = TwoWheel(
+    "Regular Taxi Bike",
     9000f,
     14
 )
 
 var bicycle = TwoWheel(
+    "Bike",
     0f,
     25
 )
@@ -62,16 +65,19 @@ var bicycle = TwoWheel(
 // The data (Four Wheel)
 
 var onlineTaxi = FourWheel(
+    "Online Taxi",
     18000f,
     8
 )
 
 var regularTaxi = FourWheel(
+    "Regular Taxi",
     12000f,
     12
 )
 
 var bus = FourWheel(
+    "Bus",
     3500f,
     22
 )
@@ -79,6 +85,16 @@ var bus = FourWheel(
 // The data (Freedom)
 
 var run = Freedom(
+    "Run",
     0f,
     35
 )
+
+//Phase 1 data
+val phaseOneVehicle = listOf(onlineTaxibike, run, onlineTaxi)
+
+//Phase 2 data
+val phaseTwoVehicle = listOf(regularTaxibike, bus, onlineTaxibike)
+
+//Phase 3 data
+val phaseThreeVehicle = listOf(regularTaxi, run, onlineTaxi)
