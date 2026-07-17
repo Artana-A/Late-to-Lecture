@@ -2,7 +2,7 @@ package org.example
 
 fun makeNewCharacter(): Character {
     print("\nInsert new character name: ")
-    var newCharacterName = readln().ifBlank { "Bob" }
+    val newCharacterName = readln().ifBlank { "Bob" }
 
     print("Insert new character time (minutes): ")
     var newCharacterTime = readln().toIntOrNull()
@@ -45,7 +45,7 @@ fun chooseCharacter(availableCharacter: List<Character>):Character {
         choice = readln().toIntOrNull()?:0
     }
 
-    var player = availableCharacter[choice-1]
+    val player = availableCharacter[choice-1]
 
     return player
 }

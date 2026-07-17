@@ -2,14 +2,17 @@ package org.example
 
 fun phaseOne(player: Character): Character{
 
-    println("You sprint out of your house and immediately notice the chaos of your neighborhood streets.")
-    Thread.sleep(2000)
-    println("Dogs are barking, neighbors are rushing their kids to school, and the sun is just somehow hotter than yesterday.")
-    Thread.sleep(2000)
-    println("You realize, you have to make a quick decision to save precious minutes!")
-    Thread.sleep(2000)
-    println("\nYou scan through the street, you chose to...")
-    Thread.sleep(2000)
+    var phaseOne = arrayOf(
+        "You sprint out of your house and immediately notice the chaos of your neighborhood streets.",
+        "Dogs are barking, neighbors are rushing their kids to school, and the sun is just somehow hotter than yesterday.",
+        "You realize, you have to make a quick decision to save precious minutes!",
+        "\nYou scan through the street, you chose to..."
+        )
+
+    for (sentence in phaseOne){
+        println(sentence)
+        Thread.sleep(2000)
+    }
 
     chooseVehicle(player, phaseOneVehicle)
 
@@ -18,14 +21,17 @@ fun phaseOne(player: Character): Character{
 
 fun phaseTwo(player: Character): Character{
 
-    println("You reach the main road with more transport options...")
-    Thread.sleep(2000)
-    println("You saw cars passing by busily, workers with their morning coffee rushing, wind blowing through your face.")
-    Thread.sleep(2000)
-    println("In the middle of chaos you look at your phone and notice there is ${player.availableTime} minutes left. ")
-    Thread.sleep(2000)
-    println("\nIn front of you, you saw a lot of transportation options:")
-    Thread.sleep(2000)
+    var phaseTwo = arrayOf(
+        "You reach the main road with more transport options...",
+        "You saw cars passing by busily, workers with their morning coffee rushing, wind blowing through your face.",
+        "In the middle of chaos you look at your phone and notice there is ${player.availableTime} minutes left. ",
+        "\nIn front of you, you saw a lot of transportation options:"
+    )
+
+    for (sentence in phaseTwo){
+        println(sentence)
+        Thread.sleep(2000)
+    }
 
     chooseVehicle(player, phaseTwoVehicle)
 
@@ -34,12 +40,16 @@ fun phaseTwo(player: Character): Character{
 
 fun phaseThree(player: Character): Character{
 
-    println("After some time, you realize that you are nearing campus!")
-    Thread.sleep(2000)
-    println("This time is crucial since it is the final push.")
-    Thread.sleep(2000)
-    println("\nWhat will you do?")
-    Thread.sleep(2000)
+    var phaseThree = arrayOf(
+        "After some time, you realize that you are nearing campus!",
+        "This time is crucial since it is the final push.",
+        "\nWhat will you do?"
+    )
+
+    for (sentence in phaseThree){
+        println(sentence)
+        Thread.sleep(2000)
+    }
 
     chooseVehicle(player, phaseThreeVehicle)
 

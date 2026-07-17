@@ -1,7 +1,5 @@
 package org.example
 
-
-
 // Interface & Class
 interface Vehicle {
     val name: String

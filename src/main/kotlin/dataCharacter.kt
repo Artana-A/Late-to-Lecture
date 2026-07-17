@@ -15,7 +15,6 @@ class Character(
     }
 }
 
-
 // The Character
 var Artana = Character(
     "Artana",
